@@ -5,7 +5,7 @@ In this tutorial, I will demonstrate how to utilize ChatGPT to develop an end-to
 
 **Step 1: Prompting ChatGPT with Project Idea:**
 
-Let's begin by creating a prompt for ChatGPT. Our goal is to construct a Docker-based project using Node.js for a to-do application. The prompt could be something like "Create a to-do app using Node.js and Express."
+Let's begin by creating a prompt for ChatGPT. Our goal is to construct a Docker-based project using Node.js for a to-do application. The prompt could be something like `Create a to-do app using Node.js and Express`.
 
 <details>
   <summary>Click to expand/collapse Result</summary>
@@ -94,7 +94,7 @@ You now have a simple to-do app using Node.js and Express. You can add tasks thr
 
 **Step 2: Receiving ChatGPT Suggestions:**
 
-ChatGPT provides suggestions on how to set up the project, including installing Node.js and other dependencies. The prompt could be something like "How to set up the project folder."
+ChatGPT provides suggestions on how to set up the project, including installing Node.js and other dependencies. The prompt could be something like `How to set up the project folder`.
 
 <details>
   <summary>Click here to see project details</summary>
@@ -112,7 +112,7 @@ ChatGPT provides suggestions on how to set up the project, including installing 
 
 **Step 3: Generating Docker File:**
 
-Next, we instruct ChatGPT to generate a Docker file for our project. It provides commands for building the Docker image and running the container. The prompt could be something like "How to write a Dockerfile."
+Next, we instruct ChatGPT to generate a Docker file for our project. It provides commands for building the Docker image and running the container. The prompt could be something like `How to write a Dockerfile`.
 
 <details>
     <summary>Click to see result</summary>
