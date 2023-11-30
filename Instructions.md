@@ -1,33 +1,51 @@
-**Title: Write a Dockerfile for a Node app deployment**
+**Title: Writing a Dockerfile for Node.js App Deployment**
 
 **Introduction:**
-In this lab, we'll explore how generative AI can help create a Dockerfile for a Node.js application. We'll be using IBM's generative AI lab, which is powered by advanced language models. The goal is to generate the necessary code for our Dockerfile, making it easier to develop our Node.js application in a Docker environment.
+In this lab, we'll explore how generative AI can assist in creating a Dockerfile for a Node.js application. We'll be utilizing IBM's generative AI lab, powered by advanced language models. The goal is to generate the necessary code for our Dockerfile, simplifying the development of our Node.js application in a Docker environment.
 
-**Objective:**
+**Lab Objective:**
+
+1. **AI Assistance Introduction:**
+   - Explore generative AI's role in simplifying Dockerfile creation for Node.js apps.
+
+2. **Classroom Setup:**
+   - Personalize the chat and choose the text generation model.
+
+3. **Prompt Instructions:**
+   - Provide specific guidance for Dockerfile generation, covering key Node.js deployment steps.
+
+4. **Message Input:**
+   - Input a prompt instructing AI to generate a Dockerfile for a Node.js app.
+
+5. **Result Analysis:**
+   - Evaluate the generated Dockerfile to ensure alignment with specified instructions.
+
+6. **Conclusion:**
+   - Summarize generative AI's impact on streamlining Node.js app deployment workflows.
 
 
-## Step 1: Set up the AI classroom
-As a first step, you must set up your AI classroom for a better learning experience.
+## Step 1: Set up the AI Classroom
+As a first step, set up your AI classroom for an enhanced learning experience.
 
-Before beginning the exercise, you must:
+Before starting the exercise, follow these steps:
 
-### 1. Name the chat: 
-Use the pencil icon available on the top-left corner of the right pane to name the chat.
+### 1. Name the Chat:
+Use the pencil icon in the top-left corner of the right pane to name the chat.
 
-<img src="#" alt="name of chat">
+<img src="./images/chat_name" alt="name the chat">
 
-### 2. Choose the model: 
-Use the dropdown option from the top-right corner of the right pane for the text generation exercise.
+### 2. Choose the Model:
+Use the dropdown option in the top-right corner of the right pane for the text generation exercise.
 
-<img src="#" alt="choose the model">
+<img src="./images/choose_model" alt="choose model">
 
 
-## Step 2: Start Generating Dokerfile
+## Step 2: Start Generating Dockerfile
 
-### 1. Give prompt instructions: 
-Use the Prompt Instructions field on the upper right pane of the chat system to provide instructions or any specific details about the context of the required output. These instructions will be locked when you start the chat and cannot be modified later.
+### 1. Provide Prompt Instructions:
+Use the "Prompt Instructions" field in the upper right pane of the chat system to give instructions or specific details about the context of the required output. These instructions will be locked once the chat starts and cannot be modified later.
 
-Set prompt instructions given below: 
+Set prompt instructions as follows:
 ```
 1. Start with the official Node.js runtime as the base image.
 2. Set the working directory inside the container to /app.
@@ -39,27 +57,21 @@ Set prompt instructions given below:
 8. Assume the main file is named app.js; adjust accordingly based on your application's entry point file.
 ```
 
-<img src="#" alt="Prompt instructions">
+<img src="./images/prompt_instructions" alt="prompt instructions">
 
 
+### 2. Type Your Message:
+Use the text box at the bottom of the page to write prompts and converse with the chat system. Enter your prompt to generate a Dockerfile, "Generate a Dockerfile for a Node.js application," and click on "Start Chat."
 
-### 2. Type your message: 
-Use the text box available at the bottom of the page to write the prompts and converse with the chat system.
-
-Enter your prompt for generate a dokerfile `Generate a Dockerfile for a Node.js application` and  click on `Start Chat` 
-
-<img src="#" alt="prompt message">
-
-### 3. Result
+<img src="./images/prompt_message" alt="prompt message">
 
 
+### 3. Result - Dockerfile Generation
 
-<img src="#" alt="result">
+Upon completion of the chat, you'll receive a generated Dockerfile. Here's an example:
+<img src="./images/result" alt="result">
 
-<details>
-   <summery>Click here to see complete result</summery>
 
-Sure! Here's a Dockerfile that you can use for a Node.js application:
 
 ```
 # Step 1: Use the official Node.js runtime as the base image
@@ -84,12 +96,7 @@ EXPOSE 3000
 CMD ["node", "app.js"]
 ```
 
-Please note that in Step 8, the command assumes that your main file is named app.js. You may need to adjust it based on your application's entry point file.
-</details>
+Please note that in Step 8, the command assumes that your main file is named app.js. Adjust it based on your application's entry point file.
 
-
-Finally you will get a complete `Dockerfile` 
-
-
-
-
+**Lab Conclusion:**
+This lab showcased the use of generative AI to streamline the Dockerfile creation process for a Node.js application. The generated Dockerfile provides a foundation for deploying Node.js applications in a containerized environment. This approach can significantly enhance the efficiency of development workflows, particularly in Docker-based projects.
