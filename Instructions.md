@@ -1,198 +1,95 @@
-**Title: Creating a Docker-Based Node.js To-Do App with ChatGPT**
+**Title: Write a Dockerfile for a Node app deployment**
 
 **Introduction:**
-In this tutorial, I will demonstrate how to utilize ChatGPT to develop an end-to-end Docker-based project. Our focus will be on building a sample to-do application using Node.js and Express.
+In this lab, we'll explore how generative AI can help create a Dockerfile for a Node.js application. We'll be using IBM's generative AI lab, which is powered by advanced language models. The goal is to generate the necessary code for our Dockerfile, making it easier to develop our Node.js application in a Docker environment.
 
-**Step 1: Prompting ChatGPT with Project Idea:**
+**Objective:**
 
-Let's begin by creating a prompt for ChatGPT. Our goal is to construct a Docker-based project using Node.js for a to-do application. The prompt could be something like `Create a to-do app using Node.js and Express`.
 
-<details>
-  <summary>Click to expand/collapse Result</summary>
-Certainly! Creating a basic to-do app using Node.js and Express involves setting up a simple server, handling routes, and interacting with a data source (in this case, we'll use an array to store tasks). Below is a step-by-step guide:
+## Step 1: Set up the AI classroom
+As a first step, you must set up your AI classroom for a better learning experience.
 
-1. **Setup Project:**
-   - Create a new folder for your project and navigate into it using the terminal.
-   - Run `npm init -y` to initialize a new Node.js project. This will create a `package.json` file.
+Before beginning the exercise, you must:
 
-2. **Install Dependencies:**
-   - Install Express by running `npm install express`.
-   - Install a templating engine (we'll use EJS) by running `npm install ejs`.
+### 1. Name the chat: 
+Use the pencil icon available on the top-left corner of the right pane to name the chat.
 
-3. **Create Project Structure:**
-   - Create a file named `app.js` for your main application.
-   - Create a `views` folder to store your EJS templates.
+<img src="#" alt="name of chat">
 
-4. **Setup Express:**
-   - Open `app.js` and set up your Express application.
+### 2. Choose the model: 
+Use the dropdown option from the top-right corner of the right pane for the text generation exercise.
 
-   ```javascript
-   const express = require('express');
-   const app = express();
-   const port = 3000;
+<img src="#" alt="choose the model">
 
-   // Set up EJS as the view engine
-   app.set('view engine', 'ejs');
 
-   // Body parser middleware
-   app.use(express.urlencoded({ extended: true }));
+## Step 2: Start Generating Dokerfile
 
-   // Array to store tasks
-   const tasks = [];
+### 1. Give prompt instructions: 
+Use the Prompt Instructions field on the upper right pane of the chat system to provide instructions or any specific details about the context of the required output. These instructions will be locked when you start the chat and cannot be modified later.
 
-   // Routes
-   app.get('/', (req, res) => {
-       res.render('index', { tasks: tasks });
-   });
+Set prompt instructions given below: 
+```
+1. Start with the official Node.js runtime as the base image.
+2. Set the working directory inside the container to /app.
+3. Copy the package.json and package-lock.json files to the working directory.
+4. Install application dependencies using npm install --production.
+5. Copy the remaining application code to the working directory.
+6. Expose port 3000.
+7. Specify the command to start the Node.js application using CMD.
+8. Assume the main file is named app.js; adjust accordingly based on your application's entry point file.
+```
 
-   app.post('/addTask', (req, res) => {
-       const task = req.body.task;
-       tasks.push(task);
-       res.redirect('/');
-   });
+<img src="#" alt="Prompt instructions">
 
-   // Start server
-   app.listen(port, () => {
-       console.log(`Server is running at http://localhost:${port}`);
-   });
-   ```
 
-5. **Create EJS Templates:**
-   - Inside the `views` folder, create a file named `index.ejs`.
 
-   ```html
-   <!-- views/index.ejs -->
-   <!DOCTYPE html>
-   <html lang="en">
-   <head>
-       <meta charset="UTF-8">
-       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-       <title>To-Do App</title>
-   </head>
-   <body>
-       <h1>To-Do App</h1>
-       <form action="/addTask" method="post">
-           <input type="text" name="task" required>
-           <button type="submit">Add Task</button>
-       </form>
-       <ul>
-           <% tasks.forEach(task => { %>
-               <li><%= task %></li>
-           <% }); %>
-       </ul>
-   </body>
-   </html>
-   ```
+### 2. Type your message: 
+Use the text box available at the bottom of the page to write the prompts and converse with the chat system.
 
-6. **Run Your App:**
-   - Execute `node app.js` in the terminal.
-   - Open your browser and visit `http://localhost:3000`.
+Enter your prompt for generate a dokerfile `Generate a Dockerfile for a Node.js application` and  click on `Start Chat` 
 
-You now have a simple to-do app using Node.js and Express. You can add tasks through the form, and they will be displayed on the main page. Note that this example uses an in-memory array to store tasks, and it does not persist data between server restarts. For a more robust solution, you could use a database like MongoDB or integrate a file system for data storage.
+<img src="#" alt="prompt message">
 
-</details>
+### 3. Result
 
-**Step 2: Receiving ChatGPT Suggestions:**
 
-ChatGPT provides suggestions on how to set up the project, including installing Node.js and other dependencies. The prompt could be something like `How to set up the project folder`.
+
+<img src="#" alt="result">
 
 <details>
-  <summary>Click here to see project details</summary>
+   <summery>Click here to see complete result</summery>
 
-  Your project folder structure should now look like this:
+Sure! Here's a Dockerfile that you can use for a Node.js application:
 
-  todo-app/
-  ├── node_modules/
-  ├── views/
-  │   └── index.ejs
-  ├── app.js
-  └── package.json
+```
+# Step 1: Use the official Node.js runtime as the base image
+FROM node:latest
 
+# Step 2: Set the working directory inside the container to /app
+WORKDIR /app
+
+# Step 3: Copy the package.json and package-lock.json files to the working directory
+COPY package*.json ./
+
+# Step 4: Install application dependencies using npm install --production
+RUN npm install --production
+
+# Step 5: Copy the remaining application code to the working directory
+COPY . .
+
+# Step 6: Expose port 3000
+EXPOSE 3000
+
+# Step 7: Specify the command to start the Node.js application using CMD
+CMD ["node", "app.js"]
+```
+
+Please note that in Step 8, the command assumes that your main file is named app.js. You may need to adjust it based on your application's entry point file.
 </details>
 
-**Step 3: Generating Docker File:**
 
-Next, we instruct ChatGPT to generate a Docker file for our project. It provides commands for building the Docker image and running the container. The prompt could be something like `How to write a Dockerfile`.
+Finally you will get a complete `Dockerfile` 
 
-<details>
-    <summary>Click to see result</summary>
-Certainly! Below are the updated instructions for creating a Dockerfile for a Node.js and Express to-do app:
 
-1. **Create a New File:**
-   Open your preferred text editor and create a new file named `Dockerfile`. Make sure there is no file extension.
 
-2. **Define the Base Image:**
-   Start by specifying the base image for your Docker image. This is the starting point for your container.
 
-   ```Dockerfile
-   FROM node:14
-   ```
-
-   Replace `14` with the desired version of the Node.js base image.
-
-3. **Set the Working Directory:**
-   Define
-
- the working directory inside the container where your application will reside.
-
-   ```Dockerfile
-   WORKDIR /app
-   ```
-
-4. **Copy Files into the Image:**
-   Copy the `package.json` and `package-lock.json` files to the working directory inside the container.
-
-   ```Dockerfile
-   COPY package*.json ./
-   ```
-
-   This assumes that your Dockerfile is in the same directory as the files you want to copy.
-
-5. **Install Dependencies:**
-   If your application requires any dependencies, install them using the appropriate package manager. In the case of Node.js, you can use npm.
-
-   ```Dockerfile
-   RUN npm install --production
-   ```
-
-   Adjust the commands based on your application's requirements.
-
-6. **Copy the Rest of the Application Code:**
-   Copy the remaining files from your local machine to the working directory inside the container.
-
-   ```Dockerfile
-   COPY . .
-   ```
-
-7. **Expose Ports (Optional):**
-   If your application exposes any ports, use the `EXPOSE` instruction.
-
-   ```Dockerfile
-   EXPOSE 3000
-   ```
-
-8. **Define the Command to Run:**
-   Specify the command to run when the container starts. For a Node.js application, use the CMD instruction.
-
-   ```Dockerfile
-   CMD ["node", "app.js"]
-   ```
-
-   Replace `"node", "app.js"` with the actual command for your application.
-
-9. **Save and Build:**
-   Save the Dockerfile and build the Docker image using the following command:
-
-   ```bash
-   docker build -t your-image-name .
-   ```
-
-   Replace `your-image-name` with a suitable name for your Docker image.
-
-That's the basic structure for a Dockerfile tailored to a Node.js and Express to-do app. Customize it based on the specific requirements of your application.
-
-</details>
-
-**Conclusion:**
-
-In conclusion, utilizing ChatGPT, we've successfully created a Docker-based Node.js to-do application. This tutorial covered setting up the project, receiving suggestions for the project structure from ChatGPT, and generating a Dockerfile to containerize the application. Feel free to expand upon this foundation to enhance and deploy your Node.js projects seamlessly.
