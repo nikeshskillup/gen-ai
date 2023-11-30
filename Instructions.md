@@ -32,12 +32,12 @@ Before starting the exercise, follow these steps:
 ### 1. Name the Chat:
 Use the pencil icon in the top-left corner of the right pane to name the chat.
 
-<img src="./images/chat_name" alt="name the chat">
+<img src="./images/chat_name.png" alt="name the chat">
 
 ### 2. Choose the Model:
 Use the dropdown option in the top-right corner of the right pane for the text generation exercise.
 
-<img src="./images/choose_model" alt="choose model">
+<img src="./images/choose_model.png" alt="choose model">
 
 
 ## Step 2: Start Generating Dockerfile
@@ -57,19 +57,19 @@ Set prompt instructions as follows:
 8. Assume the main file is named app.js; adjust accordingly based on your application's entry point file.
 ```
 
-<img src="./images/prompt_instructions" alt="prompt instructions">
+<img src="./images/prompt_instructions.png" alt="prompt instructions">
 
 
 ### 2. Type Your Message:
 Use the text box at the bottom of the page to write prompts and converse with the chat system. Enter your prompt to generate a Dockerfile, "Generate a Dockerfile for a Node.js application," and click on "Start Chat."
 
-<img src="./images/prompt_message" alt="prompt message">
+<img src="./images/prompt_message.png" alt="prompt message">
 
 
 ### 3. Result - Dockerfile Generation
 
 Upon completion of the chat, you'll receive a generated Dockerfile. Here's an example:
-<img src="./images/result" alt="result">
+<img src="./images/result.png" alt="result">
 
 
 
