@@ -25,7 +25,7 @@ Dockerfiles are crucial in the world of containerization, offering a standardize
 
 When you launch the lab environment, left side of screen you will Generative AI as like this.
 
-<img src="./images/chat_name.png" alt="name the chat">
+<img src="./images/setup_class.png" alt="name the chat">
 
 To begin, configure your AI classroom to optimize your learning experience.
 
