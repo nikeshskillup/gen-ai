@@ -61,62 +61,60 @@ Once your AI Classroom is ready, let's proceed and ask Generative AI for assista
 
 1. Enter your question in message box `What is Dockerfile ?`
 
-You can see this response:
+View the AI's response for an explanation of what a Dockerfile is.
 
 <img src="./images/what_dockerfile.png" alt="what is dockerfile">
 
 
 2. Enter your question in message box `What are the requirements for a Dockerfile?`
 
-You can see this response:
+Read the AI's response and proceed to ask individual questions regarding Dockerfile requirements.
 
 <img src="./images/req_dockerfile.png" alt="requirements dockerfile">
-
-Read the result and ask one by one as requirement of dockerfile.
 
 
 3. Enter your question in message box `What's the first crucial step when creating a Dockerfile for a Node.js application?`
 
-You can see this response:
+Understand the initial step after selecting the base image for a Node.js Dockerfile.
 
 <img src="./images/base_image.png" alt="base image">
 
 
 4. Enter your question in message box `Following the base image selection, Set the working directory inside the container to /app`
 
-You can see this response:
+Learn the subsequent step to define the working directory inside the container.
 
 <img src="./images/working_dir.png" alt="working directory ">
 
 
 5. Enter your question in message box `As selected working directory /app, bring the package.json and package-lock.json  to the working directory`
 
-You can see this response:
+Understand the process of bringing package files into the working directory.
 
 <img src="./images/package.png" alt="package.json and package-lock.json">
 
 6. Enter your question in message box `Now how i install dependencies ? and Copy the remaining application code to the working directory ?`
 
-You can see this response:
+Get guidance on installing dependencies and copying the remaining application code.
 
 <img src="./images/install_depen.png" alt="install dependencies">
 
 7. Enter your question in message box `Node.js app needs to be accessible on a specific port, what Dockerfile instruction do you include for this purpose?`
 
-You can see this response:
+Learn the instruction to include for exposing a specific port.
 
 <img src="./images/expose_port.png" alt="Expose Port">
 
 
 8. Enter your question in message box `how to specify the command to start the Node.js application using CMD ?`
 
-You can see this response:
+Understand the final step in specifying the command to start the Node.js application.
 
 <img src="./images/start_cmd.png" alt="Start Command">
 
-9. `Combine all the steps to form a complete Dockerfile for a Node.js application`
+9. Enter your question in message box `Combine all the steps to form a complete Dockerfile for a Node.js application`
 
-You can see this response:
+View the generated Dockerfile as a result of combining all the steps.
 
 <img src="./images/complete_dockerfile.png" alt="complete Dockerfile">
 
