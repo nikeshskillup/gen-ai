@@ -108,13 +108,13 @@ You can see this response:
 <img src="./images/expose_port.png" alt="Expose Port">
 
 
-7. Enter your question in message box `how to specify the command to start the Node.js application using CMD ?`
+8. Enter your question in message box `how to specify the command to start the Node.js application using CMD ?`
 
 You can see this response:
 
 <img src="./images/start_cmd.png" alt="Start Command">
 
-8. `Combine all the steps to form a complete Dockerfile for a Node.js application`
+9. `Combine all the steps to form a complete Dockerfile for a Node.js application`
 
 You can see this response:
 
@@ -122,5 +122,6 @@ You can see this response:
 
 
 
-**Lab Conclusion:**
-This lab showcased the use of generative AI to streamline the Dockerfile creation process for a Node.js application. The generated Dockerfile provides a foundation for deploying Node.js applications in a containerized environment. This approach can significantly enhance the efficiency of development workflows, particularly in Docker-based projects.
+**Summary:**
+
+In this lab, we leveraged generative AI to simplify the creation of a Dockerfile for a Node.js application. By interacting with the AI in the designated classroom, we addressed key questions and steps involved in Dockerfile development. The generated Dockerfile serves as a foundation for deploying Node.js applications in a containerized environment. This experience showcases the potential of generative AI in enhancing the efficiency of Docker-based development workflows. Through guided interactions, learners gained valuable insights into the Dockerfile creation process, making it more accessible and practical for real-world application deployments.
