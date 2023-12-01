@@ -45,13 +45,13 @@ Go to the top-right corner and choose from the drop-down for the text generation
 #### 3. Provide Prompt Instructions:
 Use the "Prompt Instructions" field in the upper right pane of the chat system to give instructions or specific details about the context of the required output. These instructions will be locked once the chat starts and cannot be modified later.
 
-<img src="./images/prompt_instructions.png" alt="prompt instructions">
+<img src="./images/prompt_instructions_box.png" alt="prompt instructions">
 
 
 #### 4. Type Your Message:
 Use the text box at the bottom of the page to write prompts and converse with the chat system. Enter your prompt to generate a Dockerfile, `Generate a Dockerfile for a Node.js application,` and click on `Start Chat.`
 
-<img src="./images/prompt_message.png" alt="prompt message">
+<img src="./images/prompt_message_box.png" alt="prompt message">
 
 
 
