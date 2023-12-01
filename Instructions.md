@@ -5,23 +5,17 @@ In this lab, we'll explore how generative AI can assist in creating a Dockerfile
 
 **Lab Objective:**
 
-1. **AI Assistance Introduction:**
-   - Explore generative AI's role in simplifying Dockerfile creation for Node.js apps.
+- **AI Assistance Introduction:** Explore generative AI's role in simplifying Dockerfile creation for Node.js apps.
 
-2. **Classroom Setup:**
-   - Personalize the chat and choose the text generation model.
+- **Classroom Setup:** Personalize the chat and choose the text generation model.
 
-3. **Prompt Instructions:**
-   - Provide specific guidance for Dockerfile generation, covering key Node.js deployment steps.
+- **Prompt Instructions:** Provide specific guidance for Dockerfile generation, covering key Node.js deployment steps.
 
-4. **Message Input:**
-   - Input a prompt instructing AI to generate a Dockerfile for a Node.js app.
+- **Message Input:** Input a prompt instructing AI to generate a Dockerfile for a Node.js app.
 
-5. **Result Analysis:**
-   - Evaluate the generated Dockerfile to ensure alignment with specified instructions.
+- **Result Analysis:** Evaluate the generated Dockerfile to ensure alignment with specified instructions.
 
-6. **Conclusion:**
-   - Summarize generative AI's impact on streamlining Node.js app deployment workflows.
+- **Conclusion:** Summarize generative AI's impact on streamlining Node.js app deployment workflows.
 
 
 ## Step 1: Set up the AI Classroom
@@ -61,7 +55,7 @@ Set prompt instructions as follows:
 
 
 ### 2. Type Your Message:
-Use the text box at the bottom of the page to write prompts and converse with the chat system. Enter your prompt to generate a Dockerfile, "Generate a Dockerfile for a Node.js application," and click on "Start Chat."
+Use the text box at the bottom of the page to write prompts and converse with the chat system. Enter your prompt to generate a Dockerfile, `Generate a Dockerfile for a Node.js application,` and click on `Start Chat.`
 
 <img src="./images/prompt_message.png" alt="prompt message">
 
