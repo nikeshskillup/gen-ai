@@ -3,10 +3,11 @@
 Estimate Time : 25 Min
 
 **Objective:**
-- Learn how to use ChatGPT for making a Dockerfile.
-- Know how to ask questions about creating a Dockerfile.
-- Feel free to ask ChatGPT for help while making your Dockerfile.
-- Remember to give clear details when you ask ChatGPT for advice.
+
+- Acquire proficiency in utilizing ChatGPT for Dockerfile creation. 
+- Develop effective questioning skills for Dockerfile creation inquiries. 
+- Utilize IBM's generative AI lab to generate the necessary response for Dockerfile creation. 
+- Ensure clarity and precision in providing details when seeking results from ChatGPT. 
 
 
 In this lab, we'll explore how generative AI can assist in creating a Dockerfile for a Node.js application. We'll be utilizing IBM's generative AI lab, powered by advanced language models. The goal is to generate the necessary code for our Dockerfile, simplifying the development of our Node.js application in a Docker environment.
@@ -97,13 +98,13 @@ Understand the process of bringing package files into the working directory.
 
 Get guidance on installing dependencies and copying the remaining application code.
 
-<img src="./images/install_depen.png" alt="install dependencies">
+<img src="./images/install_dependencies.png" alt="install dependencies">
 
 7. Enter your question in message box `Node.js app needs to be accessible on a specific port, what Dockerfile instruction do you include for this purpose?`
 
 Learn the instruction to include for exposing a specific port.
 
-<img src="./images/expose_port.png" alt="Expose Port">
+<img src="./images/expose_ports.png" alt="Expose Port">
 
 
 8. Enter your question in message box `how to specify the command to start the Node.js application using CMD ?`
