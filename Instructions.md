@@ -49,7 +49,7 @@ Use the "Prompt Instructions" field in the upper right pane of the chat system t
 
 
 #### 4. Type Your Message:
-Use the text box at the bottom of the page to write prompts and converse with the chat system. Enter your prompt to generate a Dockerfile, `Generate a Dockerfile for a Node.js application,` and click on `Start Chat.`
+Use the text box at the bottom of the page to write prompts and converse with the chat system. Enter your prompt message and click on `Start Chat`
 
 <img src="./images/prompt_message_box.png" alt="prompt message">
 
