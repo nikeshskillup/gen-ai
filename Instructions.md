@@ -9,48 +9,52 @@ Estimate Time : 25 Min
 - Utilize IBM's generative AI lab to generate the necessary response for Dockerfile creation. 
 - Ensure clarity and precision in providing details when seeking results from ChatGPT. 
 
+*Note: Please note Generative AI is an evolving field. As you attempt the labs, your experience and output might be different than what is seen here.*
 
 In this lab, we'll explore how generative AI can assist in creating a Dockerfile for a Node.js application. We'll be utilizing IBM's generative AI lab, powered by advanced language models. The goal is to generate the necessary code for our Dockerfile, simplifying the development of our Node.js application in a Docker environment.
 
+Prologue: 
 
-#### What is a Dockerfile?
-A Dockerfile is like a recipe for your application's environment. It contains a set of instructions that Docker uses to build a Docker image. This image, in turn, is a lightweight, standalone, and executable package that includes everything needed to run a piece of software, including the code, runtime, libraries, and system tools.
+#### What is a Dockerfile and why do we use the same?
 
-#### Why do we use Dockerfiles?
-Dockerfiles are crucial in the world of containerization, offering a standardized and reproducible way to package and deploy applications. They allow developers to encapsulate their applications and dependencies, ensuring consistent behavior across different environments. This not only simplifies the development process but also facilitates seamless collaboration and deployment.
+A Dockerfile is like a recipe for your application's environment. It contains a set of instructions that Docker uses to build a Docker image. This image, in turn, is a lightweight, standalone, and executable package that includes everything needed to run a piece of software, including the code, runtime, libraries, and system tools. 
+
+Dockerfiles are crucial in the world of containerization, offering a standardized and reproducible way to package and deploy applications. They allow developers to encapsulate their applications and dependencies, ensuring consistent behavior across different environments. This not only simplifies the development process but also facilitates seamless collaboration and deployment. 
 
 
-### Now, we'll direct a few questions to Generative AI to craft a Dockerfile.
+### Now, let’s direct a few questions to Generative AI to craft a Dockerfile.
 
 ## Step 1: Set up the AI Classroom
 
-When you launch the lab environment, left side of screen you will Generative AI as like this.
+The generative AI classroom is a tool where you can write and compare your prompts to generate desired text with real-time chat responses.  
+
+You will have both the generative AI classroom environment and instructions on one page in a browser. The instructions will be on the left half of the screen, and the generative AI classroom will be on the right half of the screen. You can interact with the language model using the message and chat fields.  
+
+Your AI Classroom will look similar to the screenshot shown below: 
 
 <img src="./images/setup_class.png" alt="name the chat">
 
-To begin, configure your AI classroom to optimize your learning experience.
-
-Before starting the exercise, follow these steps:
+To begin, configure your AI classroom to optimize your learning experience, by following these steps:
 
 #### 1. Name the Chat:
-Click the little pencil in the top-left corner to give your chat a name.
+Click the pencil in the top-left corner to give your chat a name.
 
 <img src="./images/chat_name.png" alt="name the chat">
 
 #### 2. Choose the Model:
-Go to the top-right corner and choose from the drop-down for the text generation exercise. (By default, it's set to gpt-3.5.)
+Go to the top-right corner and choose gpt-3.5-turbo from the drop-down for the text generation exercise. (By default, it's set to gpt-3.5.) 
 
 <img src="./images/choose_model.png" alt="choose model">
 
 
 #### 3. Provide Prompt Instructions:
-Use the "Prompt Instructions" field in the upper right pane of the chat system to give instructions or specific details about the context of the required output. These instructions will be locked once the chat starts and cannot be modified later.
+Use the "Prompt Instructions" field in the upper right pane of the chat system to give instructions or specific details about the context of the required output. These instructions will be locked once the chat starts and cannot be modified later. 
 
 <img src="./images/prompt_instructions_box.png" alt="prompt instructions">
 
 
 #### 4. Type Your Message:
-Use the text box at the bottom of the page to write prompts and converse with the chat system. Enter your prompt message and click on `Start Chat`
+Use the text box at the bottom of the page to enter queries and converse with the chat system. Enter your prompt to generate a Dockerfile, `Generate a Dockerfile for a Node.js application,` and click on `Start Chat.` 
 
 <img src="./images/prompt_message_box.png" alt="prompt message">
 
@@ -120,7 +124,11 @@ View the generated Dockerfile as a result of combining all the steps.
 <img src="./images/complete_dockerfile.png" alt="complete Dockerfile">
 
 
+### Congratulations: 
 
-**Summary:**
+You have leveraged generative AI and developed a complete Dockerfile for a Node.js application.
 
-In this lab, we leveraged generative AI to simplify the creation of a Dockerfile for a Node.js application. By interacting with the AI in the designated classroom, we addressed key questions and steps involved in Dockerfile development. The generated Dockerfile serves as a foundation for deploying Node.js applications in a containerized environment. This experience showcases the potential of generative AI in enhancing the efficiency of Docker-based development workflows. Through guided interactions, learners gained valuable insights into the Dockerfile creation process, making it more accessible and practical for real-world application deployments.
+
+### Summary:
+
+In this lab, we leveraged generative AI to simplify the creation of a Dockerfile for a Node.js application by interacting with the AI in the designated classroom and addressing key questions and steps involved in Dockerfile development. The generated Dockerfile serves as a foundation for deploying Node.js applications in a containerized environment. This experience showcases the potential of generative AI in enhancing the efficiency of Docker-based development workflows. Through guided interactions, learners gain valuable insights into the Dockerfile creation process, making it more accessible and practical for real-world application deployments. 
