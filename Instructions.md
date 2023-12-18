@@ -1,17 +1,18 @@
-**Title: Writing a Dockerfile for Node.js App Deployment**
+**Hands-on Lab: Write a Dockerfile for a Node app deployment**
 
 Estimate Time : 25 Min
 
+In this lab, we'll explore how generative AI can assist in creating a Dockerfile for a Node.js application. We'll be utilizing IBM's generative AI lab, powered by advanced language models. The goal is to generate the necessary code for our Dockerfile, simplifying the development of our Node.js application in a Docker environment. 
+
 **Objective:**
+After completing this exercise, you will be able to: 
+    - Acquire proficiency in utilizing ChatGPT for Dockerfile creation. 
+    - Develop effective questioning skills for Dockerfile creation inquiries. 
+    - Utilize IBM's generative AI lab to generate the necessary response for Dockerfile creation. 
+    - Ensure clarity and precision in providing details when seeking results from ChatGPT. 
 
-- Acquire proficiency in utilizing ChatGPT for Dockerfile creation. 
-- Develop effective questioning skills for Dockerfile creation inquiries. 
-- Utilize IBM's generative AI lab to generate the necessary response for Dockerfile creation. 
-- Ensure clarity and precision in providing details when seeking results from ChatGPT. 
+Please note Generative AI is an evolving field. As you attempt the labs, your experience and output might be different than what is seen here.  
 
-*Note: Please note Generative AI is an evolving field. As you attempt the labs, your experience and output might be different than what is seen here.*
-
-In this lab, we'll explore how generative AI can assist in creating a Dockerfile for a Node.js application. We'll be utilizing IBM's generative AI lab, powered by advanced language models. The goal is to generate the necessary code for our Dockerfile, simplifying the development of our Node.js application in a Docker environment.
 
 Prologue: 
 
@@ -54,7 +55,7 @@ Use the "Prompt Instructions" field in the upper right pane of the chat system t
 
 
 #### 4. Type Your Message:
-Use the text box at the bottom of the page to enter queries and converse with the chat system. Enter your prompt to generate a Dockerfile, `Generate a Dockerfile for a Node.js application,` and click on `Start Chat.` 
+Use the text box at the bottom of the page to enter queries and converse with the chat system. Enter your prompt to generate a Dockerfile, `Generate a Dockerfile for a Node.js application` and click on `Start Chat`. 
 
 <img src="./images/prompt_message_box.png" alt="prompt message">
 
